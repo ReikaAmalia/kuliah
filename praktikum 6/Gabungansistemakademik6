@@ -1,0 +1,187 @@
+import java.util.Scanner;
+
+public class GabunganSistemAkademik6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        // Tempat Username dan Password
+        String usernameAbdillah = "2341720018";
+        String passwordAbdillah = "2341720018";
+        String usernameReika = "2341720173";
+        String passwordReika = "2341720173";
+        String usernameSaka = "2341720108";
+        String passwordSaka = "2341720108";
+        String usernamecoba = "coba";
+        String passwordcoba = "1";
+
+        int percobaan = 3; // Jumlah percobaan maksimal
+        boolean berhasilLogin = false;
+
+        do {
+            System.out.print("Masukkan username: ");
+            String usernameInput = scanner.nextLine();
+
+            System.out.print("Masukkan password: ");
+            String passwordInput = scanner.nextLine();
+
+            if (usernameInput.equals(usernameAbdillah) && passwordInput.equals(passwordAbdillah)) {
+                System.out.println("Selamat datang Abdillah Noer Said");
+                berhasilLogin = true;
+                break;
+            }else if (usernameInput.equals(usernameReika) && passwordInput.equals(passwordReika)) {
+                System.out.println("Selamat datang Reika Amalia Syahputri");
+                berhasilLogin = true;
+                break;
+            }else if (usernameInput.equals(usernameSaka) && passwordInput.equals(passwordSaka)) {
+                System.out.println("Selamat datang Saka Nabil");
+                berhasilLogin = true;
+                break;
+            }else if (usernameInput.equals(usernamecoba) && passwordInput.equals(passwordcoba)) {
+                System.out.println("Untuk percobaan");
+                berhasilLogin = true;
+                break;
+            } else {
+                percobaan--;
+                System.out.println("Login gagal! Sisa percobaan: " + percobaan);
+            }
+
+            if (percobaan == 0) {
+                System.out.println("Anda telah mencapai batas percobaan, Sistem ditutup.");
+                break;
+            }
+        } while (true);
+
+        if (berhasilLogin) {
+            // Tempatkan kode program setelah login berhasil di sini
+            String fitur;
+        do {    
+            System.out.println("Silahkan pilih menu yang ingin anda access :");
+            System.out.println("1. General");
+            System.out.println("2. Akademik");
+            System.out.println("3. Message");
+            System.out.println("4. UKT");
+            System.out.println("0. ====== Logout ======");
+            
+            System.out.println("Pilih menu sesuai angka :");
+            fitur = scanner.next();
+
+            switch (fitur) {
+                case "1":
+                    String biodata;                    
+                do {    
+                    System.out.println("===== GENERAL =====");
+                    System.out.println("1. Biodata");
+                    System.out.println("0. Kembali");
+
+                    System.out.println("Pilih menu :");
+                    biodata = scanner.next();
+
+                    switch (biodata) {
+                        case "1":
+                        System.out.println("Biodata : ");
+                        // Isi e 
+                        break;
+                        case "0":
+                        System.out.println("Anda telah berhasil kembali");
+                        break;
+                        default:
+                        System.out.println("Maaf, Angka yang anda masukkan salah");
+                    }
+                } while (!biodata.equals("0"));
+                break;
+                
+                case "2":
+                String akademik;                   
+                do {
+                    System.out.println("===== AKADEMIK =====");
+                    System.out.println("1. Jadwal Kuliah");
+                    System.out.println("2. KRS");
+                    System.out.println("3. Nilai Mahasiswa");
+                    System.out.println("4. Presensi");
+                    System.out.println("0. Kembali");
+
+                    System.out.println("Pilih menu :");
+                    akademik = scanner.next();
+
+                    switch (akademik) {
+                        
+                        case "1":
+                        System.out.println("Jadwal kuliah : ");
+                        break;
+                        
+                        case "2":
+                        System.out.println("KRS : ");
+                        break;
+                        
+                        case "3":
+                        System.out.println("Masukkan nilai untuk menghitung rata-rata (2 Digit) :");
+                        double nilaiMatdas, nilaiDaspro, nilaiBing, nilaiKti, nilaiCtps, nilaiPancasila, nilaiK3, rataRata, totalNilai;
+                        System.out.print("Masukkan nilai mata kuliah MATDAS\t: ");
+                        nilaiMatdas = scanner.nextDouble();
+                        System.out.print("Masukkan nilai mata kuliah DASPRO\t: ");
+                        nilaiDaspro = scanner.nextDouble();
+                        System.out.print("Masukkan nilai mata kuliah BING\t\t: ");
+                        nilaiBing = scanner.nextDouble();
+                        System.out.print("Masukkan nilai mata kuliah KTI_TI\t: ");
+                        nilaiKti = scanner.nextDouble();
+                        System.out.print("Masukkan nilai mata kuliah CTPS_TI\t: ");
+                        nilaiCtps = scanner.nextDouble();
+                        System.out.print("Masukkan nilai mata kuliah PANCASILA\t: ");
+                        nilaiPancasila = scanner.nextDouble();
+                        System.out.print("Masukkan nilai mata kuliah K3_TI\t: ");
+                        nilaiK3 = scanner.nextDouble();
+                        totalNilai = nilaiMatdas+nilaiDaspro+nilaiBing+nilaiKti+nilaiCtps+nilaiPancasila+nilaiK3;
+                        rataRata = totalNilai / 7;
+                        System.out.println("Nilai Rata-Rata Mahasiswa adalah\t: " + rataRata);
+                
+                        if (rataRata > 80 && rataRata <= 100) {
+                            System.out.println("Nilai A dengan kualisifikasi sangat baik" );
+                            }else if (rataRata > 73 && rataRata <= 80) {
+                                System.out.println("Nilai B+ dengan kualisifikasi lebih dari baik" ); 
+                            }else if (rataRata > 65 && rataRata <= 73) {
+                                System.out.println("Nilai B dengan kualisifikasi baik" );
+                            }else if (rataRata > 60 && rataRata <= 65) {
+                                System.out.println("Nilai C+ dengan kualisifikasi lebih dari cukup" );
+                            }else if (rataRata > 50 && rataRata <= 60) {
+                                System.out.println("Nilai C dengan kualisifikasi cukup" );
+                            }else if (rataRata > 39 && rataRata <= 50) {
+                                System.out.println("Nilai D dengan kualisifikasi kurang" );
+                            }else{
+                                System.out.println("Nilai E dengan kualisifikasi gagal" );          
+                        }
+                        break;
+                        
+                        case "4":
+                        System.out.println("Presesnsi : ");
+                        break;
+                        
+                        case "0":
+                        System.out.println("Anda telah berhasil Kembali");
+                        break;
+                        
+                        default:
+                        System.out.println("Maaf, Angka yang anda masukkan salah");
+                    }
+                } while (!akademik.equals("0"));
+                break;
+                
+                case "3":
+                System.out.println("Data Rencana Studi Mahasiswa : ");
+                break;
+                
+                case "4":
+                System.out.println("Transkip Nilai :");
+                break;
+                
+                case "0":
+                System.out.println("Anda telah berhasil logout");
+                break;
+                
+                default:
+                System.out.println("Maaf, Angka yang anda masukkan salah");
+            }
+        } while (!fitur.equals("0")); //Ulangi loop selama pengguna tidak memilih keluar (0), Jika memilih 0 maka akan keluar
+
+        scanner.close(); // Tempatnya diakhir codingan untuk menutup scanner
+        }
+    }
+}
