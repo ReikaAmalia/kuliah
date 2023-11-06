@@ -14,6 +14,11 @@ boolean success = false;
  System.out.print("Tebak angka (1-10): ");
  int answer = input.nextInt();
  input.nextLine();
+ if (answer < number) {
+    System.out.println("Tebakan anda lebih kecil daripada jawaban");
+ }else{
+    System.out.println("Tebakan anda lebih besar daripada jawaban");
+ }
  success = (answer == number);
  } while(!success);
  System.out.print("Apakah Anda ingin mengulang permainan (Y/y)?");
