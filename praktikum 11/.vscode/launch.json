@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "TUGASDASPRO",
+            "request": "launch",
+            "mainClass": "TUGASDASPRO",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "tugasindividuno3",
+            "request": "launch",
+            "mainClass": "tugasindividuno3",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Tugasindividuno2",
+            "request": "launch",
+            "mainClass": "Tugasindividuno2",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Tugasindividuno1",
+            "request": "launch",
+            "mainClass": "Tugasindividuno1",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "NestedLoop_24",
+            "request": "launch",
+            "mainClass": "NestedLoop_24",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Quiz24",
+            "request": "launch",
+            "mainClass": "Quiz24",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Square24",
+            "request": "launch",
+            "mainClass": "Square24",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Star24",
+            "request": "launch",
+            "mainClass": "Star24",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
+            "name": "Triangle24",
+            "request": "launch",
+            "mainClass": "Triangle24",
+            "projectName": "praktikum 11_c43df206"
+        }
+    ]
+}
