@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AscendingSort24",
+            "request": "launch",
+            "mainClass": "AscendingSort24",
+            "projectName": "praktikum 11_c43df206"
+        },
+        {
+            "type": "java",
             "name": "TUGASDASPRO",
             "request": "launch",
             "mainClass": "TUGASDASPRO",

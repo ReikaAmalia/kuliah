@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 public class TUGASDASPRO {
         public static void main(String[] args) {
             int tinggi = 5;
